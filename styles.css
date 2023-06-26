@@ -1,0 +1,182 @@
+:root {
+  --dark: #374151;
+  --darker: #1f2937;
+  --darkest: #111827;
+  --light: #eee;
+  --gray: #6b7280;
+  --pink: #ec4899;
+  --purple: #8b5cf6;
+  --cedar: #242e3a;
+  --bluewood: #2f4555;
+  --fiddler: #59948c;
+  --google: #202125;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: none;
+}
+
+body {
+  background-color: var(--google);
+  font-family: "Poppins", sans-serif;
+  color: var(--light);
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  width: 100vw;
+  height: 100vh;
+}
+
+.background-card {
+  width: 1200px;
+  height: 850px;
+  border-radius: 2%;
+  background-color: var(--cedar);
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  transition: all 0.4s;
+}
+
+.search-area {
+  display: flex;
+  justify-content: flex-end;
+  width: 800px;
+  height: 50px;
+  margin-top: 20px;
+  margin-left: 20px;
+  z-index: 1;
+}
+
+.movie-input {
+  font-size: 15px;
+  width: 400px;
+  margin-right: 12px;
+  padding: 10px;
+  background-color: #374151;
+  border-radius: 4px;
+  backdrop-filter: blur(10px);
+  color: var(--light);
+}
+
+.movie-input:hover {
+  color: var(--fiddler);
+}
+
+.movie-input:focus {
+  color: var(--fiddler);
+}
+
+.btn-search {
+  width: 50px;
+  height: 50px;
+  border-radius: 100%;
+  padding: 10px;
+  background-color: var(--dark);
+}
+
+.fa-magnifying-glass {
+  background-color: var(--dark);
+  color: var(--fiddler);
+  font-size: 22px;
+}
+
+.image-area {
+  margin-top: 20px;
+  width: 1200px;
+  display: flex;
+}
+
+.details-text {
+  width: 400px;
+}
+
+.poster {
+  display: flex;
+  width: 300px;
+  height: 400px;
+  border-radius: 2%;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  margin-left: 200px;
+}
+
+.new-box {
+  width: 300px;
+  margin-left: 100px;
+}
+
+.crters {
+  display: flex;
+  justify-content: space-evenly;
+  padding: 10px;
+}
+
+.crters2 {
+  display: flex;
+  justify-content: space-evenly;
+  padding: 10px;
+}
+
+.genre {
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  padding: 10px;
+  border-radius: 2%;
+  background-color: var(--dark);
+}
+
+.genre:hover {
+  color: var(--fiddler);
+}
+
+.fa-star {
+  color: #f5c319;
+}
+
+.dir-wri-act {
+  margin-top: 50px;
+  margin-left: 15px;
+}
+
+.shared {
+  display: flex;
+}
+
+.texts {
+  margin: 2px;
+}
+
+.plot-area {
+  margin-top: 20px;
+  margin-left: 4px;
+  text-align: start;
+  padding: 10px;
+}
+
+.error-msg {
+  display: flex;
+  color: #d12424;
+  width: 200px;
+  margin-top: 20px;
+}
+
+.language-special {
+  width: 800px;
+}
+
+.plot-title {
+  margin: 3px;
+}
+
+.background-card-size {
+  display: flex;
+  padding-left: 60px;
+  width: 800px;
+  height: 100px;
+  transition: all 0.4s;
+}
